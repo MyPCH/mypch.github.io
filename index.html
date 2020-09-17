@@ -1,1 +1,158 @@
-test
+<!DOCTYPE html>
+<html lang="en">
+<title>MyPCH</title>
+<meta charset="UTF-8">
+<meta name="viewport content=" width="device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!--<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">-->
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-green.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="custom.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<style>
+  html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+  .w3-sidebar {
+    z-index: 3;
+    width: 250px;
+    top: 50px;
+    bottom: 0;
+    height: inherit;
+  }
+  </style>
+<body>
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+      <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+      <img class="w3-bar-item w3-images box small" src="images/MyPCH100.png" alt="MyPCH">
+      <!-- <a href="#" class="w3-bar-item w3-button w3-theme-l1">Logo</a> -->
+      <!-- <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>-->
+      <a href="blog.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">News</a>
+      <a href="about.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
+    </div>
+  </div>
+
+  <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <h4 class="w3-bar-item"><b>Demonstrations</b></h4>
+    <a class="w3-bar-item w3-button w3-hover-black" href="usecase1.html" target="_blank">Use case 1 - Collection</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="usecase2.html" target="_blank">Use case 2 - Insigths</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="usecase3.html" target="_blank">Use case 3 - Sharing</a>
+    <h4 class="w3-bar-item"><b>Documentation</b></h4>
+    <a class="w3-bar-item w3-button w3-hover-black" href="documents.html" target="_blank">Documents</a>
+    <h4 class="w3-bar-item"><b>Repositories</b></h4>
+    <a class="w3-bar-item w3-button w3-hover-black" href="https://github.com/MyPCH/MyPCH-SC" target="_blank">DS MyPCH framework</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="https://github.com/MyPCH/sc-diabetes" target="_blank">SC handle diabetes data</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="https://github.com/MyPCH/sc-base" target="_blank">SC base container</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="https://github.com/MyPCH/srv-ontology" target="_blank">SC ontology</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="https://github.com/MyPCH/srv-semantices" target="_blank">SC semantic validation services</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="https://github.com/MyPCH/app-utility" target="_blank">SC online utilities</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="https://github.com/MyPCH/development" target="_blank">TP local development</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="https://github.com/MyPCH/blip" target="_blank">TP web</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="https://github.com/MyPCH/uploader" target="_blank">TP uploader</a>    
+    <!-- <a class="w3-bar-item w3-button w3-hover-black" href="#">Link</a> -->
+  </nav>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+  <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+  <div class="w3-main" style="margin-left:250px">
+
+    <div class="w3-row w3-padding-64">
+      <div class="w3-twothird w3-container">
+        <!-- <h1 class="w3-text-teal">Heading</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
+          dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div> -->
+      <div class="w3-third w3-container">
+        <!-- <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+        <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p> -->
+      </div>
+    </div>
+
+      <div class="w3-row">
+      <div class="w3-twothird w3-container">
+        <h1 class="w3-text-teal">MyPCH (MyPersonalConnectedHealth)</h1>
+        <p>This repository is the result of the NGI funded project, <a href="https://wiki.geant.org/display/NGITrust/Funded+Projects+Call+1#FundedProjectsCall1-MyPCH" target="_blank">MyPCH</a>. The innovation is an open source solution that empowers persons with diabetes (PwD) by sharing personal data from
+          a diabetes device in a secure, trusted, auditable, traceable and consensus-based way inspired by MyData principles.</p>           
+        <img src="images/proposal.png" alt="proposal" class="w3-image" style="width:70%;height:70%">
+        <h2 class="w3-text-teal">Purpose</h2>           
+          The propose of the project is to use Semantic Container standardized framework to exchange health data in a privacy respecting data flow between various stakeholders in use cases:
+        <dl>
+          <dt><b>Use case 1 - Collection</b></dt>
+          <dd>- Collect diabetes data from medical devices using a PC with Tidepool software (TP) and store into a Semantic Container (SC).</dd> 
+          <dt><b>Use case 2 - Insigths</b></dt>
+          <dd>- Get personal insigths to explore and visualise health data in a self-determined way locally or by using a Personal Data Store (PDS) service.</dd> 
+          <dt><b>Use case 3 - Sharing</b></dt>
+         <dd>- Share data with others by uploading diabetes data to a cloud service with Semantic Containers.</dd>
+         <dd>- Share either personal identifiable information with clinics or aggregated anonymous data with researchers.</dd>
+         <dd>- We explore requirements from real-world use cases in the Danish diabetes ecosystem and introduce a new component, Health Data Store (HDS) service.</dd>      
+       </dl>
+      </div>
+      <div class="w3-third w3-container">
+        <!-- <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+        <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p> -->
+      </div>
+    </div>
+     
+    <!-- Pagination -->
+    <!-- <div class="w3-center w3-padding-32">
+      <div class="w3-bar">
+        <a class="w3-button w3-black" href="#">1</a>
+        <a class="w3-button w3-hover-black" href="#">2</a>
+        <a class="w3-button w3-hover-black" href="#">3</a>
+        <a class="w3-button w3-hover-black" href="#">4</a>
+        <a class="w3-button w3-hover-black" href="#">5</a>
+        <a class="w3-button w3-hover-black" href="#">»</a>
+      </div>
+    </div> -->
+
+    <!-- Pagination -->
+    </div>
+  <!-- END MAIN -->
+
+    <footer>
+      <div class="w3-container w3-theme-l2 w3-padding-24">
+        <h6>This project has received funding from the European Union’s Horizon 2020 Research and Innovation Programme under THE NGI_TRUST Grant Agreement No. 825618.</h6>
+        <a href="https://www.ngi.eu/ngi-projects/ngi-trust/"><img class="w3-image" style="width:15%;height:15%" src="images/EU_NGI.png" alt="NGI"></a>
+      </div>
+      <div class="w3-container w3-theme-l1">
+        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+      </div>
+    </footer>
+
+  </div>
+
+  <script>
+  // Get the Sidebar
+  const mySidebar = document.getElementById("mySidebar");
+
+  // Get the DIV with overlay effect
+  const overlayBg = document.getElementById("myOverlay");
+
+  // Toggle between showing and hiding the sidebar, and add overlay effect
+  function w3_open() {
+    if (mySidebar.style.display === 'block') {
+      mySidebar.style.display = 'none';
+      overlayBg.style.display = "none";
+    } else {
+      mySidebar.style.display = 'block';
+      overlayBg.style.display = "block";
+    }
+  }
+
+  // Close the sidebar with the close button
+  function w3_close() {
+    mySidebar.style.display = "none";
+    overlayBg.style.display = "none";
+  }
+  </script>
+
+</body>
+</html>
