@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Use case - demonstration</title>SW
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-green.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="custom.css">
+
+
+
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Roboto Light", sans-serif}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+<!--    <a href="index.html" class="w3-bar-item w3-images box small" alt="MyPCH" <img src="images/MyPCH100.png"></a>-->
+        <!-- <a href="#" class="w3-bar-item w3-button w3-theme-l1">Logo</a> -->
+    <!-- <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>-->
+    <img class="w3-bar-item w3-images box small" src="images/MyPCH100.png" alt="MyPCH">
+    <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Home</a>
+    <a href="blog.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">News</a>
+    <a href="about.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
+  </div>
+</div>
+
+<!-- w3-content defines a container for fixed size centered content,
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px">
+
+<!-- Header -->
+<header class="w3-container w3-center w3-padding-64">
+  <h1><b>Use case - dataflows</b></h1>
+  <!--  <p>From MyPCH<span class="w3-tag">unknown</span></p>-->
+</header>
+
+<!-- Grid -->
+<div class="w3-row">
+
+<!-- Blog entries -->
+<div class="w3-col l8 s12">
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+    <!-- <img src="images/DS-favicon.png" alt="DS" style="width:100%">-->
+    <div class="w3-container">
+      <h3><b>Get started</b></h3>
+      <h5>Quick up-and-running</h5>
+     </div>
+
+    <div class="w3-container">
+      <p>In <a href="https://github.com/MyPCH/MyPCH-SC/blob/master/prepare/getstarted.md">Get started</a> you can find a description to get quick up-and-running on a Linux machine:
+        <ul>
+        <li>Prerequisites
+          <ul>
+            <li>A machine with Ubuntu and how to install Docker</li>
+          </ul>
+        </li>
+        <li>Tidepool
+          <ul>
+          <li>Create a local instans of the platform with a local Kubernetes cluster</li> 
+           <li>Install uploader and web</li>
+          </ul> 
+          <li>Semantic Container
+            <ul>
+           <li>Install semantic container</li>
+          </ul>
+          </li> 
+      </ul>
+       </li>	
+      </ul> 
+        </p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+<!--          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>-->
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+<!--          <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-tag">0</span></span></p>-->
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+    <!-- <img src="images/DS-favicon.png" alt="DS" style="width:100%">-->
+    <div class="w3-container">
+      <h3><b>Integration</b></h3>
+      <h5>Extract data from device using Tidepool and use in Semantic Container dataflows</h5>
+      <img src="images/ui-integration.png" style="width:30%" ALT="ui-integration">
+    </div>
+
+    <div class="w3-container">
+      <p>
+        Setup a single Linux <a href="https://github.com/MyPCH/MyPCH-SC/blob/master/demos/integration-demo.md">integration demo</a><br>
+        When finished uploading then you can do the following:  (refer to the orange number in figure):
+        <ol>
+        <li>Grab the data for further use in the dataflows</li>
+        <li>See the data in <a href="https://github.com/MyPCH/blip">Tidepool Web</a></li>
+       </ol>
+       <br>
+       In the dataflow <a href="https://github.com/MyPCH/sc-diabetes/tree/master/dataflows/Tidepool_Integration">Tidepool integration</a> you can find a demonstration of these capabilities:
+       <ul>
+          <li>reading data from a Tidepool supported device</li>
+          <li>avoding duplicates on data upload into a Semantic Container</li>
+          <li>providing a Diabetes specific Usage Policy</li>
+          <li>generating a Provenance trail specific to diabetes devices</li>
+        </ul>
+        </p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+<!--          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>-->
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+<!--          <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-tag">0</span></span></p>-->
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+
+  <!-- entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+    <div class="w3-container">
+      <h3><b>Personal data</b></h3>
+      <h5>Store data to Semantic Container and get insigths in PDS</h5>
+      
+      In the dataflow <a href="https://github.com/MyPCH/sc-diabetes/tree/master/dataflows/Personal_Data">Personal_Data</a> you can find a demonstration of these capabilities:
+      <ul>
+        <li>converting diabetes data into FHIR-compliant RDF format</li>
+        <li>accessing data through a SPARQL endpoint</li>
+        <li>uploading data to the OwnYourData Data Vault</li>
+        <li>strong encryption of diabetes data</li>
+        <li>authentication methods for diabetes data</li>
+        <li>visualizing data in a Knowledge Graph</li>
+        <li>gain insights from personal data through individual analysis</li>
+        <li>access and process diabetes data with standard tools</li>
+      </ul>
+
+    </div>
+
+    <div class="w3-container">
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+<!--          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>-->
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+<!--          <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-badge">2</span></span></p>-->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-card-4 w3-margin w3-white">
+    <div class="w3-container">
+      <h3><b>Data donation</b></h3>
+      <h5>Share data and identify if data leak</h5>
+      
+    </div>
+
+    <div class="w3-container">
+      <p>
+        In the dataflow <a href="https://github.com/MyPCH/sc-diabetes/tree/master/dataflows/Data_Donation">Data_Donation</a> you can find a demonstration of these capabilities:
+
+      <ul>
+        <li>avoding duplicates on data upload</li>
+        <li>providing a Diabetes specific Usage Policy</li>
+        <li>generating a Provenance trail specific to diabetes devices</li>
+        <li>matching Usage Policies specifically based on subsets for Data Categories</li>
+        <li>applying and verifying digital watermarks</li>
+      </ul>
+      </p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+<!--          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>-->
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+<!--          <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-badge">2</span></span></p>-->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-card-4 w3-margin w3-white">
+    <div class="w3-container">
+      <h3><b>Data tracing</b></h3>
+      <h5>Share data and aggreate/anonymize data</h5>
+      
+    </div>
+
+    <div class="w3-container">
+      <p>
+      In the dataflow <a href="https://github.com/MyPCH/sc-diabetes/tree/master/dataflows/Data_Tracing">Data_Tracing</a> you can find a demonstration of these capabilities:
+      <ul>
+        <li>PwDs upload their local diabetes data to an aggregation/anonymization service</li>
+        <li>aggregating/anonymizing data in a Semantic Container</li>
+        <li>a service provider transfers selected (aggregated) data to a 3rd party</li>
+        <li>each PwD traces his/her own data and compiles a usage report</li>
+  </ul>  
+      </p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+<!--          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>-->
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+<!--          <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-badge">2</span></span></p>-->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="w3-card-4 w3-margin w3-white">
+    <div class="w3-container">
+      <h3><b>Proxy</b></h3>
+      <h5>Use a proxy to handle integration</h5>
+      
+    </div>
+
+    <div class="w3-container">
+      <p>
+        We have defined a concept of a health data store (HDS) to merit of higher protection for sensitive data as health data. For scenarios of multiple users in the same environment we have developed a <a href="https://github.com/MyPCH/MyPCH-SC/tree/master/demos/proxy/app">template</a>
+        that can be used to demonstrate the workflow as swagger response.  
+        <br>
+
+        In <a href="https://github.com/MyPCH/MyPCH-SC/blob/master/demos/proxy.md">Proxy</a> you can find a demonstration of these capabilities:
+
+       <ul>
+        <li>template to build a demo with Python using Flask web application framework </li>
+        <li>local demo and upload to a docker repository available for the kubernetes cluster</li>
+        <li>design and security considerations for deployment for building an online demo</li>
+      </ul>
+      
+      </p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+<!--          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>-->
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+<!--          <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-badge">2</span></span></p>-->
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- END BLOG ENTRIES -->
+</div>
+
+<!-- Introduction menu -->
+<div class="w3-col l4">
+  <!-- About Card -->
+  <div class="w3-card w3-margin w3-margin-top">
+    <img src="images/proposal.png" style="width:100%" ALT="proposal">
+    <div class="w3-container w3-white">
+      <h4><b>Demonstrations</b></h4>
+      <p>Dataflows</p>
+      <ul> 
+        <li>Get started</li>
+        <li>Integration</li>
+        <li>Personal data</li>
+        <li>Data donation</li>
+        <li>Data Tracing</li>
+        <li>Proxy</li>
+      </ul>
+      
+    </div>
+  </div><hr>
+  
+  <!-- Labels / tags -->
+ <!-- <div class="w3-card w3-margin">
+    <div class="w3-container w3-padding">
+      <h4>Tags</h4>
+    </div>
+    <div class="w3-container w3-white">
+    <p><span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">London</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">IKEA</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">NORWAY</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">DIY</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Baby</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Family</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Clothing</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Shopping</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Sports</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Games</span>
+    </p>
+    </div>
+  </div>-->
+
+<!-- END Introduction Menu -->
+</div>
+
+<!-- END GRID -->
+</div><br>
+
+<!-- END w3-content -->
+</div>
+
+<!-- Footer -->
+<footer>
+  <div class="w3-container w3-theme-l2 w3-padding-16">
+    <h6>This project has received funding from the European Union’s Horizon 2020 Research and Innovation Programme under THE NGI_TRUST Grant Agreement No. 825618.</h6>
+  </div>
+  <div class="w3-container w3-theme-l1">
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  </div>
+</footer>
+</body>
+</html>
